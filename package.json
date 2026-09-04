@@ -1,0 +1,40 @@
+{
+  "name": "axure-ld-toolbox",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "手绘 Layout 草图转 Axure RP 可编辑 LD 设计图形工具（完全本地运行）",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "fixture": "node --experimental-strip-types scripts/make-fixture.mts",
+    "e2e": "node --experimental-strip-types scripts/e2e.mts"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "immer": "^10.1.1",
+    "lucide-react": "^0.462.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.5",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "playwright": "^1.62.1",
+    "postcss": "8.5.1",
+    "tailwindcss": "3.4.17",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
